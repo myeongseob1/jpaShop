@@ -12,3 +12,7 @@ Springboot와 jpa를 활용하여 jpaShop 프로젝트(bookstore 예제)
 # View 환경설정  
 static - 정적 컨텐츠는 이 경로에  
 templates - 템플릿 엔진으로 렌더링이 필요할경우
+
+# 테이블 설계
+![img.png](img.png)
+
