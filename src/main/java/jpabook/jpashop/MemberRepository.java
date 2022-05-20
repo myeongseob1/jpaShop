@@ -11,12 +11,12 @@ public class MemberRepository {
     private EntityManager em;
 
     //커맨드와 쿼리를 분리하자
-    public Long save(Member member){
-        em.persist(member);
-        return member.getId();
+    public Long save(TestMember testMember){
+        em.persist(testMember);
+        return testMember.getId();
     }
 
-    public Member find(Long id){
-        return em.find(Member.class, id);
+    public TestMember find(Long id){
+        return em.find(TestMember.class, id);
     }
 }
