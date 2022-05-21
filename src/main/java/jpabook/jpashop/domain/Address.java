@@ -16,7 +16,7 @@ public class Address {
     private String street;
     private String zipcode;
 
-    protected Address() { //직접 호출 하지 않도록 protected로 해놓는다
+    protected Address() { //직접 호출 하지 않도록 protected로
     }
 
     public Address(String city, String street, String zipcode) {
