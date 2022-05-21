@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test #test용 내장메모리 생성 (사실 다지워도 스프링부트의 default가 메모리모드다)
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create #application 실행시점에 내가가진 엔티티를 지우고 테이블을 다시 생성하는 기능
+    properties:
+      hibernate:
+#        show_sql: true  #생성되는 sql이 다 보이는데 system.out을 통해 보이는것 -> 운영에선 logger을 통해 찍어야하므로 지우자
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug #logger을 통해 sql이 다찍힘 -> 운영에서 사용
+    org.hibernate.type: trace # parameter의 type log들을 다 찍어주는 설정
