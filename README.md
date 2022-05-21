@@ -17,7 +17,8 @@ templates - 템플릿 엔진으로 렌더링이 필요할경우
 ![img.png](img.png)
 
 # 어플리케이션 아키텍처
-![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+
 
 #### cotroller, web : 웹계층
 #### service : 비즈니스 로직, 트랜젝션 처리
